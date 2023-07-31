@@ -79,7 +79,9 @@ import Foundation
 //
 //print(str)
 
-//print(readLine()!.map { $0.isLowercase ? $0.uppercased() : $0.lowercased() }.joined())
+print(readLine()!.map { $0.isLowercase ? $0.uppercased() : $0.lowercased() }.joined())
+
+// 깃 푸쉬 테스트
 
 
 
