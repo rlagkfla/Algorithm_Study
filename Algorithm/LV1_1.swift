@@ -1,10 +1,9 @@
 //
-//  main.swift
+//  LV_1.swift
 //  Algorithm
 //
-//  Created by t2023-m0067 on 2023/07/26.
+//  Created by t2023-m0067 on 2023/08/03.
 //
-
 import Foundation
 
 // 1. 나누기 몫 return
@@ -77,13 +76,6 @@ import Foundation
 // 7. 문자열 붙여서 출력
 // 두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다. 입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.
 
-//let inp = readLine()!.components(separatedBy: [" "]).map { $0 }
-//let (s1, s2) = (inp[0], inp[1])
-//
-//print(s1, s2, separator: "")
-//print(inp.joined())
 
-// 8. 문자열 돌리기
-// 문자열 str이 주어집니다. 문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.
 
-let s1 = readLine()!
+
