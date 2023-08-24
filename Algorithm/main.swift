@@ -86,4 +86,47 @@ import Foundation
 // 8. 문자열 돌리기
 // 문자열 str이 주어집니다. 문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.
 
-let s1 = readLine()!
+//let s1 = readLine()!
+
+//s1.forEach {
+//    print($0)
+//}
+//
+//for a in s1 {
+//    print(a)
+//}
+
+//s1.map {
+//    print($0)
+//}
+
+// 9. 홀짝 구분하기
+// 자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 "n is even"을, 홀수이면 "n is odd"를 출력하는 코드를 작성해 보세요.
+
+//let a = Int(readLine()!)!
+
+//if a % 2 == 0 {
+//    print("\(a) is even")
+//} else {
+//    print("\(a) is odd")
+//}
+
+//print("\(a) is \(a % 2 == 0 ? "even" : "odd")")
+
+// 10.문자열 겹쳐쓰기
+// 문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.
+
+func solution(_ my_string:String, _ overwrite_string:String, _ s:Int) -> String {
+
+    var result = my_string
+    let range = my_string.index(my_string.startIndex, offsetBy: s)..<my_string.index(my_string.startIndex, offsetBy: s + overwrite_string.count)
+    
+    result.replaceSubrange(range, with: overwrite_string)
+    
+    return result
+}
+
+let modifiedString = solution("He11oWor1d", "lloWorl", 2)
+print(modifiedString)
+
+
