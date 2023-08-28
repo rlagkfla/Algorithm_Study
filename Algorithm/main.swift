@@ -113,20 +113,52 @@ import Foundation
 
 //print("\(a) is \(a % 2 == 0 ? "even" : "odd")")
 
-// 10.문자열 겹쳐쓰기
+// 10. 문자열 겹쳐쓰기
 // 문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.
 
-func solution(_ my_string:String, _ overwrite_string:String, _ s:Int) -> String {
+//func solution(_ my_string:String, _ overwrite_string:String, _ s:Int) -> String {
+//
+//    var result = my_string
+//    let range = my_string.index(my_string.startIndex, offsetBy: s)..<my_string.index(my_string.startIndex, offsetBy: s + overwrite_string.count)
+//
+//    result.replaceSubrange(range, with: overwrite_string)
+//
+//    return result
+//}
+//
+//let modifiedString = solution("He11oWor1d", "lloWorl", 2)
+//print(modifiedString)
 
-    var result = my_string
-    let range = my_string.index(my_string.startIndex, offsetBy: s)..<my_string.index(my_string.startIndex, offsetBy: s + overwrite_string.count)
+// 11. 문자열 섞기 (못 품)
+// 길이가 같은 두 문자열 str1과 str2가 주어집니다. 두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.
+
+//func solution2(str1: String, str2: String, idx: IndexPath) -> String{
+//    return [...str1].map((x, idx)=> x+str2[idx]).join("")
+//}
+//
+//func solution3(_ str1:String, _ str2:String) -> String {
+//    return ""
+//}
+
+//func solution1(str1: String, str2: String) -> String {
+//    var result = ""
+////    var i = 0
+//    for i in str1 {
+//        result += '${str1[i]}${str2[i]}'
+//    }
+//    return result
+//}
+
+// 12. 문자 리스트를 문자열로 변환하기
+// 문자들이 담겨있는 배열 arr가 주어집니다. arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.
+
+func solution(_ arr:[String]) -> String {
     
-    result.replaceSubrange(range, with: overwrite_string)
+    let result = arr.joined()
     
     return result
 }
 
-let modifiedString = solution("He11oWor1d", "lloWorl", 2)
-print(modifiedString)
-
+let aa = solution(["a","b","c"])
+print(aa)
 
